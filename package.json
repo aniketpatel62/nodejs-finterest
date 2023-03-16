@@ -1,7 +1,6 @@
 {
   "name": "nodejs-finterest",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -280,5 +279,14 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aniketpatel62/F-INTEREST.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/aniketpatel62/F-INTEREST/issues"
+  },
+  "homepage": "https://github.com/aniketpatel62/F-INTEREST#readme",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
