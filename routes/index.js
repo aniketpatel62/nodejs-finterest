@@ -31,22 +31,7 @@ router.post('/upload', async (req, res) => {
     res.redirect('/');
 });
 
-// update (to be fixed)
-// router.get('/image/:id/update', async (req, res) => {
-//     const id = req.params.id;
-//     const imageUpdate = await Image.findByIdAndUpdate(
-//       { _id: id },
-//       {
-//         title: req.params.title,
-//         description: req.params.description,
-//       },
-//         function (err) {
-//           if (err) console.log(err);
-//           else console.log("Successfully updated");
-//         }
-//     );
-//    res.redirect("/");
-// })
+
 
 //read
 router.get('/image/:id', async (req, res) => {
@@ -57,11 +42,11 @@ router.get('/image/:id', async (req, res) => {
 
 
 //delete
-router.get('/image/:id/delete', async (req, res) => {
-    const { id } = req.params;
-    const imageDeleted = await Image.findByIdAndDelete(id);
-    await unlink(path.resolve('./public' + imageDeleted.path));
-    res.redirect('/');
-});
+// router.get('/image/:id/delete', async (req, res) => {
+//     const { id } = req.params;
+//     const imageDeleted = await Image.findByIdAndDelete(id);
+//     await unlink(path.resolve('./public' + imageDeleted.path));
+//     res.redirect('/');
+// });
 
 module.exports = router;
